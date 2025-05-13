@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D17B920-2B0E-4B21-A860-7686B244EA53}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KARAKTERSATRANCOYUN</RootNamespace>
+    <AssemblyName>KARAKTERSATRANCOYUN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pieces\arkakapaksatranc.jpg" />
+    <Content Include="Pieces\arkakapaksatranc.png" />
+    <Content Include="Pieces\azman-kedi.png" />
+    <Content Include="Pieces\black_araba.png" />
+    <Content Include="Pieces\black_ares.png" />
+    <Content Include="Pieces\black_artemis.png" />
+    <Content Include="Pieces\black_athena.png" />
+    <Content Include="Pieces\black_azman.png" />
+    <Content Include="Pieces\black_bilge_sirin.png" />
+    <Content Include="Pieces\black_bishop.png" />
+    <Content Include="Pieces\black_Canan.png" />
+    <Content Include="Pieces\black_cat.png" />
+    <Content Include="Pieces\black_daphne.png" />
+    <Content Include="Pieces\black_dog.png" />
+    <Content Include="Pieces\black_fred.png" />
+    <Content Include="Pieces\black_gargamel.png" />
+    <Content Include="Pieces\black_guclusirin.png" />
+    <Content Include="Pieces\black_harry.png" />
+    <Content Include="Pieces\black_hermes.png" />
+    <Content Include="Pieces\black_hermione.png" />
+    <Content Include="Pieces\black_jerry.png" />
+    <Content Include="Pieces\black_kadriye.png" />
+    <Content Include="Pieces\black_king.jpeg" />
+    <Content Include="Pieces\black_king.png" />
+    <Content Include="Pieces\black_knight.png" />
+    <Content Include="Pieces\black_kral_remzi.png" />
+    <Content Include="Pieces\black_Mirket.png" />
+    <Content Include="Pieces\black_mouse.png" />
+    <Content Include="Pieces\black_necati.png" />
+    <Content Include="Pieces\black_ordek.png" />
+    <Content Include="Pieces\black_pawn.png" />
+    <Content Include="Pieces\black_piyon.png" />
+    <Content Include="Pieces\black_poseidon.png" />
+    <Content Include="Pieces\black_queen.png" />
+    <Content Include="Pieces\black_ron.png" />
+    <Content Include="Pieces\black_rook.png" />
+    <Content Include="Pieces\black_sakir.png" />
+    <Content Include="Pieces\black_scoobydoo.png" />
+    <Content Include="Pieces\black_shaggy.png" />
+    <Content Include="Pieces\black_sirinbaba.png" />
+    <Content Include="Pieces\black_sirine.png" />
+    <Content Include="Pieces\black_snape.png" />
+    <Content Include="Pieces\black_tom.png" />
+    <Content Include="Pieces\black_velma.png" />
+    <Content Include="Pieces\black_voldemort.png" />
+    <Content Include="Pieces\black_zeus.png" />
+    <Content Include="Pieces\kolleksiyon-karakterleri-harry-potter--0-b2af.jpg" />
+    <Content Include="Pieces\white_araba.png" />
+    <Content Include="Pieces\white_cat.png" />
+    <Content Include="Pieces\white_diana.png" />
+    <Content Include="Pieces\white_Jhon_darling.png" />
+    <Content Include="Pieces\white_jupiter.png" />
+    <Content Include="Pieces\white_kaptan_kanca.png" />
+    <Content Include="Pieces\pawn.png" />
+    <Content Include="Pieces\white_azman.png" />
+    <Content Include="Pieces\white_bilge_sirin.png" />
+    <Content Include="Pieces\white_bishop.png" />
+    <Content Include="Pieces\white_daphne.png" />
+    <Content Include="Pieces\white_dog.png" />
+    <Content Include="Pieces\white_fred.png" />
+    <Content Include="Pieces\white_gargamel.png" />
+    <Content Include="Pieces\white_guclusirin.png" />
+    <Content Include="Pieces\white_harry.png" />
+    <Content Include="Pieces\white_hermione.png" />
+    <Content Include="Pieces\white_jerry.png" />
+    <Content Include="Pieces\white_king.png" />
+    <Content Include="Pieces\white_knight.png" />
+    <Content Include="Pieces\white_mars.png" />
+    <Content Include="Pieces\white_mercury.png" />
+    <Content Include="Pieces\white_Michael_Darling.png" />
+    <Content Include="Pieces\white_mouse.png" />
+    <Content Include="Pieces\white_neptune.png" />
+    <Content Include="Pieces\white_ordek.png" />
+    <Content Include="Pieces\white_pawn.png" />
+    <Content Include="Pieces\white_peter_pan.png" />
+    <Content Include="Pieces\white_piyon.png" />
+    <Content Include="Pieces\white_queen.png" />
+    <Content Include="Pieces\white_ron.png" />
+    <Content Include="Pieces\white_rook.png" />
+    <Content Include="Pieces\white_scoobydoo.png" />
+    <Content Include="Pieces\white_shaggy.png" />
+    <Content Include="Pieces\white_sirinbaba.png" />
+    <Content Include="Pieces\white_sirine.png" />
+    <Content Include="Pieces\white_snape.png" />
+    <Content Include="Pieces\white_tinkerbell.png" />
+    <Content Include="Pieces\white_tom.png" />
+    <Content Include="Pieces\white_velma.png" />
+    <Content Include="Pieces\white_venus.png" />
+    <Content Include="Pieces\white_voldemort.png" />
+    <Content Include="Pieces\white_Wendy_Darling.png" />
+    <Content Include="Sounds\harry_potter_theme.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\slow_muzik_theme.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\tom_and_jerry_theme.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
